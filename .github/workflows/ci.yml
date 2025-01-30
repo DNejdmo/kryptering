@@ -19,10 +19,13 @@ jobs:
         dotnet-version: '8.0'  
 
     - name: Restore dependencies
-      run: dotnet restore Kryptering.sln
+      run: dotnet restore 
+      working-directory: ./
 
     - name: Build
-      run: dotnet build Kryptering.sln --configuration Release 
+      run: dotnet build 
+      working-directory: ./
 
     - name: Run tests
-      run: dotnet test Kryptering.sln
+      run: dotnet test
+      working-directory: ./
