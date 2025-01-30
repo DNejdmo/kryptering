@@ -13,16 +13,24 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - name: List files
+      run: ls -R
+
     - name: Set up .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '8.0'  
 
     - name: Restore dependencies
-      run: dotnet restore ../KrypteringTests/KrypteringTests.csproj
+      run: dotnet restore 
+      working-directory: .
+
 
     - name: Build
-      run: dotnet build 
+      run: dotnet build
+      working-directory: .
+
 
     - name: Run tests
-      run: dotnet test 
+      run: dotnet test ./KrypteringTests/KrypteringTests.csproj
+      working-directory: ./KrypteringTests
