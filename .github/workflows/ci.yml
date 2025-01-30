@@ -20,12 +20,12 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore 
-      working-directory: ./Kryptering
+      working-directory: ./kryptering
 
 
     - name: Build
       run: dotnet build 
-      working-directory: ./Kryptering
+      working-directory: ./kryptering
 
 
     - name: Run tests
