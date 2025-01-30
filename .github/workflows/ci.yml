@@ -23,12 +23,14 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore 
+      working-directory: .
 
 
     - name: Build
-      run: dotnet build 
+      run: dotnet build
+      working-directory: .
 
 
     - name: Run tests
-      run: dotnet test
-
+      run: dotnet test ./KrypteringTests/KrypteringTests.csproj
+      working-directory: ./KrypteringTests
