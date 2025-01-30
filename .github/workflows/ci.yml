@@ -19,10 +19,16 @@ jobs:
         dotnet-version: '8.0'  
 
     - name: Restore dependencies
-      run: dotnet restore ../KrypteringTests/KrypteringTests.csproj
+      run: dotnet restore 
+      working-directory: ./Kryptering
+
 
     - name: Build
       run: dotnet build 
+      working-directory: ./Kryptering
+
 
     - name: Run tests
-      run: dotnet test 
+      run: dotnet test ./KrypteringTests/KrypteringTests.csproj
+      working-directory: ./KrypteringTests
+
