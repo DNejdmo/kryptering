@@ -1,0 +1,41 @@
+name: CI for KrypteringService
+
+on:
+  pull_request:
+    branches:
+      - dev  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Kontrollera mappstruktur
+      run: find . -type f
+
+
+    - name: Verify working directory
+      run: pwd && ls -R
+
+    - name: List files
+      run: ls -R
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0'  
+
+    - name: Restore dependencies
+      run: dotnet restore 
+      working-directory: .
+
+
+    - name: Build
+      run: dotnet build
+
+    - name: Run tests
+      run: dotnet test
+     
