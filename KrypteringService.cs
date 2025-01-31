@@ -1,4 +1,5 @@
-﻿
+﻿namespace Kryptering;
+
 
 public class KrypteringService
 {
