@@ -13,6 +13,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - name: Kontrollera mappstruktur
+      run: find . -type f
+
+
     - name: Verify working directory
       run: pwd && ls -R
 
