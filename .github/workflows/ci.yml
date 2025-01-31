@@ -28,9 +28,7 @@ jobs:
 
     - name: Build
       run: dotnet build
-      working-directory: .
-
 
     - name: Run tests
-      run: dotnet test ./KrypteringTests/KrypteringTests.csproj
-      working-directory: ./KrypteringTests
+      run: dotnet test
+     
