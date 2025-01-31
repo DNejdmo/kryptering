@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kryptering", "Kryptering.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrypteringTests", "..\KrypteringTests\KrypteringTests.csproj", "{2C080AEB-4C13-4135-A1AB-1DE11BA643C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrypteringTests", "KrypteringTests\KrypteringTests.csproj", "{8DE70EB2-63F1-42F1-AF05-B44B59192ACD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2C080AEB-4C13-4135-A1AB-1DE11BA643C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C080AEB-4C13-4135-A1AB-1DE11BA643C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C080AEB-4C13-4135-A1AB-1DE11BA643C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE70EB2-63F1-42F1-AF05-B44B59192ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE70EB2-63F1-42F1-AF05-B44B59192ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE70EB2-63F1-42F1-AF05-B44B59192ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE70EB2-63F1-42F1-AF05-B44B59192ACD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
