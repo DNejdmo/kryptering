@@ -7,7 +7,7 @@ var app = builder.Build();
 var krypteringService = new Kryptering.KrypteringService();
 
 
-app.MapGet("/", () => Results.Json(new { message = "Välkommen till API:et för rövarspråket!" }));
+app.MapGet("/", () => Results.Json(new { message = "Välkommen till Daniels API för rövarspråket!" }));
 
 
 // Endpoint för kryptering
