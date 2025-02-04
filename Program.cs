@@ -7,8 +7,8 @@ var app = builder.Build();
 var krypteringService = new Kryptering.KrypteringService();
 
 
-
 app.MapGet("/", () => Results.Text("Välkommen till API:et för rövarspråket!", "text/plain", System.Text.Encoding.UTF8));
+
 
 
 // Endpoint för kryptering
